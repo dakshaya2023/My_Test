@@ -1,0 +1,24 @@
+#%RAML 1.0
+securitySchemes:
+  SecurityScheme:
+    type: OAuth 2.0
+    describedBy:
+      responses:
+        "200": {}
+        "201": {}
+title: "Test API "
+description: "This is the test API "
+mediaType:
+  - application/json
+version: 1.0.0
+protocols:
+  - HTTPS
+/users:
+  get:
+    displayName: Users
+    securedBy:
+      - SecurityScheme
+
+
+
+
